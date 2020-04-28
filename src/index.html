@@ -203,38 +203,46 @@
 
     <div class = "task-6">
         <form method="post">
-            <p><b>Имя</b></p>
-            <input name="name" value="Виктория">
-            <p><b>Фамилия</b></p>
-            <input name="surname" value="Михейко">
-            <p><b>Фото</b></p>
-            <input type="image" src="images/ezik.jpg" width=270>
+            <label>
+            <b>Имя:</b><br>
+            <input type="text" name="firstname"><br>
+            <b>Фамилия:</b><br>
+            <input type="text" name="lastname">
+            <p><b>Добавьте фото</b></p>
+            <input type="file" name="fhoto">
             <p><b>Пароль</b></p>
-            <input type="password">
+            <input type="password" name="PW">
             <p><b>Подтверждение пароля</b></p>
-            <input type="password">
-            <p><b>Выберете город из списка:</b><Br>
-                <input type="radio" name="city" value="Mur"> Мурманск<Br>
-                <input type="radio" name="city" value="SPB"> Санкт-Петербург<Br>
-                <input type="radio" name="city" value="Bel"> Белогород<Br>
-                <input type="radio" name="city" value="Ar"> Архангельск<Br>
-                <input type="radio" name="city" value="Pss"> Псков<Br>
+            <input type="password" name="RPW">
+            <p><b>Выберите город из списка:</b><Br>
+                <select name="city">
+                    <option value="Vibor"> ...</option>
+                    <option value="Mur"> Мурманск</option>
+                    <option value="SPB"> Санкт-Петербург</option>
+                    <option value="Bel"> Белогород</option>
+                    <option value="Ar"> Архангельск</option>
+                    <option value="Pss"> Псков</option>
+                </select><br>
+                
                 <br><b>Коротко о себе:</b><br>
-                <textarea name="infaoeze" cols="60" rows="7">Обыкновенный ёж — животное небольших размеров. Длина тела составляет 20—30 см, хвоста — около 3 см, масса тела — 700—800 г. Уши относительно небольшие (обычно меньше 3,5 см). Морда вытянутая. У обыкновенных ежей, обитающих на Кипре, уши более крупные. На верхней челюсти у ежей 20 мелких острых зубов, а на нижней — 16.</textarea></p>
-                <b>Пол </b>
-                <input name="gender" value="Женский">
+                <textarea name="infaovas" cols="60" rows="7" placeholder="Ваше сообщение"></textarea><br>
+                <b>Пол </b><br>
+                <input type="radio" name="gender" value="m"> Мужской<br>
+                <input type="radio" name="gender" value="w"> Женский<br>
             </p>
             <p><b>Любимые дисциплины:</b><br>
-                <input type="checkbox" name="subject" value="OOP"> ООП <br>
-                <input type="checkbox" name="subject" value="TM"> Тайм-менеджмент <br>
-                <input type="checkbox" name="subject" value="Spec"> Спец разделы ВМ <br>
-                <input type="checkbox" name="subject" value="WP"> Веб. прогр <br>
-                <input type="checkbox" name="subject" value="VM"> Выч мат и числ методы <br>
-                <input type="checkbox" name="subject" value="Eco"> Экономика <br>
-                <input type="checkbox" name="subject" value="SAOD"> Структуры и алгоритмы обработки данных <br>
+                <select name = "subject" multiple>
+                    <option value = "OOP"> ООП </option>
+                    <option value = "TM"> Тайм-менеджмент </option>
+                    <option value = "Spec"> Спец разделы ВМ </option>
+                    <option value = "WP"> Веб. программирование </option>
+                    <option value = "VM"> Выч мат и числ методы </option>
+                    <option value = "Eco"> Экономика </option>
+                    <option value = "SAOD"> Структуры и алгоритмы обработки данных </option>
+                </select><br><!--Выбор через ctrl-->
             </p>
             <p>
-                <b>Поступать в магистратуру?</b><br>
+                <b>Планируете поступать в магистратуру?</b><br>
                 <input type="radio" name="magister" value="yes"> Да<Br>
                 <input type="radio" name="magister" value="no"> Нет<Br>
                 <input type="radio" name="magister" value="xz"> Не знаю<Br>
@@ -257,13 +265,14 @@
             </p>
             <p><input type="reset" value="Сбросить">
             <input type="submit" value="Подтвердить"></p>
+        </label>
         </form>
     </div>
 
     <div class="task-7">
-        <iframe name=video src="https://www.youtube.com/watch?v=VPDJXngp2bM&feature=youtu.be&t=260" width="600" height="400">
+        <iframe name=video width="600" height="400" src="https://www.youtube.com/embed/VPDJXngp2bM"  >
             Этот браузер не поддерживает встроенные фреймы!
-         </iframe>
+        </iframe>
     </div>
 </body>
 </html>
