@@ -23,6 +23,7 @@
     position: relative;
     overflow: hidden;
 }
+
 .hedgehog-features .feature.top {
     margin-top: 0;
     padding-bottom: 40px;
@@ -33,24 +34,24 @@
     color: #ffffff;
     position: absolute;
     transform: rotate(45deg);
-    padding: 5px 20px;
-    width: 130px;
+    padding: 5px 20px; /* отступ от текста внутри ленты */
+    width: 130px; /* ширина ленты */
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
-    top: 20px;
-    right: -30px;
-    text-align: center;
+    top: 20px; /* устанавливает положение ленточки по вертикали */
+    right: -30px; /* устанавливает положение ленточки по горизонтали */
+    text-align: center; /* текст внутри ленточки - по центру ленточки */
 }
 
 .hedgehog-features .feature .feature-header {
     font-weight: 600;
     font-size: 17px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* отступ абзацного текста снизу для остального */
     text-align: center;
 }
 
 .hedgehog-features .feature .feature-description {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.7; /* межстрочный интервал */
 }

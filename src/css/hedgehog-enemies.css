@@ -6,14 +6,14 @@
 .hedgehog-enemies .hedgehog-enemies-list {
     display: flex;
     flex-direction: row;
-    
+}
 
-}
 .hedgehog-enemies .hedgehog-enemies-list .enemy-wrapper {
-    width: 16.665%;
+    width: 16.665%; /* ширина каждого блока с врагом */
 }
+
 .hedgehog-enemies .hedgehog-enemies-list .enemy {
-    overflow: hidden;
+    overflow: hidden; /* скрывает подписи-имена врагов, которые находятся внизу */
     position: relative;
     padding-bottom: 100%;
 }
@@ -25,23 +25,23 @@
     width: 100%;
     background-color: #292929c2;
     position: absolute;
-    bottom: -100%;
-    transition: bottom ease-out 0.5s;
+    bottom: -100%; /* чтобы надпись не наезжала на картинку и появлялась снизу */
+    transition: bottom ease-out 0.5s; /* плавное появление надписи */
 }
 .hedgehog-enemies .hedgehog-enemies-list .enemy:hover .enemy-name {
     bottom: 0;
 }
 .hedgehog-enemies .hedgehog-enemies-list .enemy img {
     position: absolute;
-    width: auto;
-    height: 100%;
+    width: auto; /* устанавливает ширину элемента исходя из его содержимого */
+    height: 100%; /* втискавает в область всю фотографию, а не только левую верхнюю часть */
     top: 0; 
     right: 0;
     bottom: 0;
     left: 0;
-    transition: transform ease-out 0.5s;
+    transition: transform ease-out 0.5s; /* отвечат за ПЛАВНОЕ увеличение фото */
 }
 
 .hedgehog-enemies .hedgehog-enemies-list .enemy:hover img {
-   transform: scale(1.1);
+   transform: scale(1.1); /* растягивает картинку в 1.1 по х и у */
 }

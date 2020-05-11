@@ -8,21 +8,17 @@
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;;
+    bottom: 0;
     left: 0;
     background: url(/images/hedgehog.jpg) center;
     background-size: cover;
-}
-
-.banner  .banner-image::after{
-
 }
 
 .banner .promo {
     color: #ffffff;
     width: 35%;
     background: #29292950;
-    height: 100%; 
+    height: 100%;
     padding: 280px 20px 40px;
 }
 
@@ -54,7 +50,5 @@
 }
 
 .banner .promo p {
-    
     font-size: 30px;
-    
 }
