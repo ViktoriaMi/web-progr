@@ -1,14 +1,12 @@
 .header {
     border-bottom: 1px solid #e7e7e7;
-    /* фиксирую блок меню при прокрутке!!! */
-    position: fixed; 
+    position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
     display: block;
-    z-index: 20;
+    z-index: 200;
     background-color: white;
-    /* белый цвет заезжает за картинку ежа, не знаю как исправить */
 }
 
 .header .logo {
@@ -39,32 +37,20 @@
 .header .menu {
     height: 60px;
     float: right;
-    /* !!! */
-    /* position: fixed; 
-    top: 0px;
-    left: 0px;
-    width: 100%; */
 }
 
 .header .menu .menu-item {
     padding: 0 10px;
 }
 
-/* !!! */
-/* .display-table-row {
-    background-color: aqua;
-} */
-
 .header .menu a.menu-item {
     text-decoration: none;
     color: #292929;
     text-transform: uppercase;
     font-size: 12px;
-    /* font-weight: bold; */
     font-weight: 600;
     border-bottom: 1px solid transparent;
     position: relative;
-    /* position: fixed; */
     transition: color ease-out 0.3s;
 }
 
@@ -74,16 +60,10 @@
 .header .menu a.menu-item::after {
     content: '';
     position: relative;
-    /* position: fixed; */
-    /* top: 0px; */
-    /* position: fixed;
-    z-index: 1000; */
     top: 20px;
     display: block;
     height: 2px;
     background: transparent;
-    /* !!! */
-    /* background-color: aqua; */
     bottom: -3px;
     left: 0px; 
     right: 10px;
@@ -94,21 +74,3 @@
     background: #16ca1f;
     bottom: -1px;
 }
-
-/* .display-table-row {
-    position: fixed; 
-    top: 0;
-    width: 100%;
-} */
-
-/* .display-table .full-height {
-    position: fixed; 
-    top: 0;
-    width: 100%;
-} */
-
-/* .menu .clearfix {
-    position: fixed; 
-    top: 0;
-    width: 100%;
-} */

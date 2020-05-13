@@ -11,9 +11,10 @@ html, body, div, p, h1, h2, h3, h4, h5, h6, input, label, form, button {
 }
 
 body {
+    top: 69px; /* отступ сверху на высоту header-а */
     position: relative;
     min-height: 100%;
-    padding-bottom: 251px;;
+    padding-bottom: 251px;
 }
 
 h2 {
